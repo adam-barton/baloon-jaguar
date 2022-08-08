@@ -10,7 +10,7 @@ const EventPage = ({ data }) => {
             <EventTitleCard 
                 eventImage={data.event.images[0].url} 
                 eventDate={data.event.startDate} 
-                button={<a className="text-2xl underline" href={data.event.originalURL} target="_blank" rel="noreferrer">More Info</a>}
+                button={<a className="text-2xl underline place-self-center p-4" href={data.event.originalURL} target="_blank" rel="noreferrer">More Info</a>}
                 >
 
                 <div className="w-1/2">
