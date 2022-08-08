@@ -1,4 +1,6 @@
-const crypto = require('crypto');
+const fetch = (args) =>
+  import(`node-fetch`).then(({ default: fetch }) => fetch(args))
+  const crypto = require('crypto');
 exports.sourceNodes = async ({
   actions: { createNode },
   createContentDigest,
