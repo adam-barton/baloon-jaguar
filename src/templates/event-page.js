@@ -8,12 +8,13 @@ const EventPage = ({ data }) => {
   return (
     <Layout pageTitle={data.event.name}> 
             <EventTitleCard 
+                eventTitle={data.event.name}
                 eventImage={data.event.images[0].url} 
                 eventDate={data.event.startDate} 
-                button={<a className="text-2xl underline place-self-center p-4" href={data.event.originalURL} target="_blank" rel="noreferrer">More Info</a>}
+                button={<a className="text-2xl underline place-self-center p-4" href={data.event.originalURL} target="_blank" rel="noreferrer" >More Info</a>}
                 >
 
-                <div className="w-1/2">
+                <div className="w-1/2" style={{width: "50%"}}>
                     <img src={data.event.images[0].url} alt={data.event.name} className="m-w-1/2"/>
                 </div>
             </EventTitleCard>
